@@ -1,0 +1,72 @@
+.gallery {
+
+  &__title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all .5s;
+    
+    &::first-letter {
+      font-family: 'Great Vibes', cursive;
+      font-size: 5rem;
+      margin-right: 10px;
+      font-style: normal;
+    }
+
+    &:hover {
+      transform: translate(-5px, -3px);
+      text-shadow: 2px 5px 20px #aaa;
+    }
+  }
+
+
+  &__img {
+    transition: all .5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+  }
+
+  &__row-one.reveal-item {
+    transform: translateX(-300px);
+    transition: all .5s;
+    opacity: 0;
+    &.reveal-item--is-visible{
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 2.5s;
+    }
+  }
+  
+  &__row-two.reveal-item {
+    transform: translateX(300px);
+    transition: all .5s;
+    opacity: 0;
+    &.reveal-item--is-visible {
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 2.5s;
+    }
+  }
+
+
+}
+// Overwrite url for lightbox2
+.lb-cancel {
+  background: url("assets/images//loading.gif") no-repeat ;
+}
+
+.lb-nav a.lb-prev {
+  background: url("assets/images/prev.png") left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+  background: url("assets/images/next.png") right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+  background: url("assets/images/close.png") right 48% no-repeat;  
+}
