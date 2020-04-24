@@ -28,32 +28,37 @@
       transform: scale(1.05);
     }
 
-  }
-
-  &__row-one.reveal-item {
-    transform: translateX(-300px);
-    transition: all .5s;
-    opacity: 0;
-    &.reveal-item--is-visible{
-      transform: translateX(0);
-      opacity: 1;
-      transition: all 2.5s;
+    &--row-one {
+      &.reveal-item {
+      transform: translateX(-300px);
+      transition: all .5s;
+      opacity: 0;
+      }
+      &.reveal-item--is-visible{
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 2.5s;
+      }
     }
-  }
-  
-  &__row-two.reveal-item {
-    transform: translateX(300px);
-    transition: all .5s;
-    opacity: 0;
-    &.reveal-item--is-visible {
-      transform: translateX(0);
-      opacity: 1;
-      transition: all 2.5s;
+
+    &--row-two {
+      &.reveal-item {
+      transform: translateX(300px);
+      transition: all .5s;
+      opacity: 0;
+      }
+      &.reveal-item--is-visible{
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 2.5s;
+      }
     }
+
+
   }
-
-
 }
+
+
 // Overwrite url for lightbox2
 .lb-cancel {
   background: url("assets/images//loading.gif") no-repeat ;

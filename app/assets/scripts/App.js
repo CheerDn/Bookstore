@@ -25,7 +25,7 @@ $(document).ready(function() {
   * efficiency (through lodash and removing event listener after revealing) 
   * and suitable after resizing the window.
   */
-  new RevealOnScroll(document.querySelectorAll('.gallery__row-one'),75);
-  new RevealOnScroll(document.querySelectorAll('.gallery__row-two'),75);
+  new RevealOnScroll(document.querySelectorAll('.gallery__img--row-one'),75);
+  new RevealOnScroll(document.querySelectorAll('.gallery__img--row-two'),75);
 
 });
