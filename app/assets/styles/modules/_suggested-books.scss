@@ -1,0 +1,53 @@
+.suggested-books {
+  height: 100vh;
+  background: url("assets/images/wood-bg.jpeg") no-repeat center /cover;
+}
+
+.books {
+  position: relative;
+  height: 50vh;
+}
+
+.book {
+  width: 35%;
+  position: absolute;
+  box-shadow: 5px 5px 15px #444;
+  // mimic the thickness of books
+  border-right: 5px solid #777;
+  border-bottom: 10px solid #444;
+  transition: all .7s ease-in-out;
+
+  &--1 {
+    top: 5%;
+    left: 20%;
+    transform: rotate(-45deg);
+  }
+
+  &--2 {
+    top: 20%;
+    left: 50%;
+    transform: rotate(40deg);
+  }
+
+  &--3 {
+    top: 40%;
+    left: 40%;
+    transform: rotate(55deg);
+  }
+
+  &--4 {
+    top: 35%;
+    left: 10%;
+    transform: rotate(-38deg);
+  }
+
+  &:hover {
+    transform: scale(1.3) rotateX(20deg);
+    z-index: 50;
+    box-shadow: 5px 5px 25px #444;
+    // When books are lifted, the color of pages become lighter
+    border-right: 10px solid #ddd;
+    border-bottom: 20px solid #bbb;
+  }
+  
+}

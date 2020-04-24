@@ -2,10 +2,9 @@ import '../styles/styles.css';
 import $ from 'jquery';
 import lightbox from 'lightbox2';
 
-
 import RevealOnScroll from './modules/RevealOnScroll'
 
-//for hot module replacement of webpack dev server
+// for hot module replacement of webpack dev server
 if (module.hot) {
   module.hot.accept();
 }
@@ -16,6 +15,8 @@ if (module.hot) {
 */
 
 $(document).ready(function() {
+  
+  // make lightbox appear faster, and connect the last one and the first one.
   lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
@@ -30,6 +31,7 @@ $(document).ready(function() {
   new RevealOnScroll(document.querySelectorAll('.gallery__img--row-two'),75);
 
 
+  // change books beside the accordion
   $('.writers-accordion').click(function(event) {
         
     if(event.target.id.split('-')[0] === 'button') {
