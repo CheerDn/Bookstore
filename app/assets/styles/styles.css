@@ -1,10 +1,11 @@
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
 @import "../../../node_modules/lightbox2/dist/css/lightbox.min.css";
 
 @import "./base/global";
 @import "./modules/common-title";
 @import "./modules/header";
-@import "./modules/gallery"
+@import "./modules/gallery";
+@import "./modules/famous-writers";
 
 
 
