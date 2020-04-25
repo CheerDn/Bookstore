@@ -1,0 +1,77 @@
+.popular-books {
+  position: relative;
+
+  &__video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+  }
+
+  &__bg-video {
+    /*
+    * 100% for smaller screen. 
+    * It should be enough height.
+    */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__book-card {
+    position: relative;
+    box-shadow: 5px 15px 50px #aaa;
+    max-width: 420px;
+    overflow: hidden;
+    transition: all .8s;
+  }
+  
+  &__rotate {
+    // make cards flip like 3D
+    perspective: 100rem;
+  }
+  
+  &__back {
+    position: absolute;
+    top: -100%;
+    background: #fefefe;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    // make sure there's no pointer related effect
+    user-select: none;
+    pointer-events: none;
+    // rotate &__back initially
+    transform: rotateY(180deg);
+    transition: top .8s, opacity .4s;
+  }
+  
+  /* 
+  * separate back & back-content so that it could
+  * be applied different transform content.
+  */ 
+  &__back-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &__rotate:hover &__book-card {
+    transform: rotateY(180deg);
+  }
+  
+  &__rotate:hover &__back {
+    opacity: 1;
+    top: 0;
+    user-select: auto;
+    pointer-events: auto;
+  }
+
+}
+
+
+
