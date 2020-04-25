@@ -1,6 +1,4 @@
 import '../styles/styles.css';
-import $ from 'jquery';
-import lightbox from 'lightbox2';
 
 import RevealOnScroll from './modules/RevealOnScroll'
 
