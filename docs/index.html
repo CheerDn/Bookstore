@@ -10,9 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
   <title>Book Store</title>
-<link href="styles.24289ee1c2f9b82b5f21.css" rel="stylesheet"></head>
+<link href="styles.f14cacc4555b73109ad0.css" rel="stylesheet"></head>
 <body>
   
   <!-- navigation -->
@@ -24,7 +24,7 @@
     </button>
     <div class="nav__bg-cover"></div>
     <!-- content -->
-    <div class="collapse nav-content" id="myNavbar">
+    <div class="collapse nav__content" id="myNavbar">
       <div class="container-fluid">
         <div class="row">
           <div class="col-10 mx-auto">
@@ -33,22 +33,22 @@
             </a>
             <ul class="navbar-nav text-capitalize flex-lg-row flex-column nav-justified">
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">home</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">about us</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">about us</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">library</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">library</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">deals</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">deals</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">reviews</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">reviews</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-3 m-1 link-item">contact</a>
+                <a href="#" class="nav-link m-lg-3 m-1 nav__content__link-item">contact</a>
               </li>
             </ul>
           </div>
@@ -66,14 +66,14 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container d-lg-block d-none">
         <div class="row my-5">
           <div class="col text-center">
             <h1 class="display-1 text-white">Your Chance</h1>
             <h3 class="text-capitalize text-light">get each book for $9.99</h3>
           </div>
         </div>
-        <div class="row d-lg-block d-none">
+        <div class="row">
           <div class="col text-center">
             <img src="assets/images/book.png" width="550">
           </div>
@@ -85,15 +85,18 @@
 
   <!-- Header -->
   <header class="header d-flex align-items-center">
-    <div class="align-self-start position-absolute">
+    <div class="align-self-start position-absolute d-flex flex-column align-items-center">
       <a href="#">
         <img src="./assets/images/book.png" width="120" class="img-fluid m-4"  alt="book">
       </a>
+      <div class="publisher publisher--with-icon">
+        OpenClassic
+      </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h1 class="text-light display-3 font-italic mb-5 header__banner-heading">We <img src="./assets/images/heart.png" width="250"  class="img-fluid" alt="love"> Reading</h1>
+          <h1 class="text-light display-2 font-italic mb-5 header__banner-heading">We <img src="./assets/images/heart.png" width="120"  class="img-fluid" alt="love"> Classics</h1>
           <a href="#" class="btn btn-lg btn-outline-danger text-uppercase px-5">Check Out</a>
         </div>
       </div>
@@ -101,14 +104,13 @@
   </header>
   <!-- end of header -->
   
-
   <!-- gallery -->
   <section class="gallery">
     <div class="container">
       <!-- 1st bootstrap row (title) -->
       <div class="row">
         <div class="col text-center py-5">
-          <h1 class="text-secondary text-uppercase font-italic common-title">The best libraries in the world</h1>
+          <h1 class="text-secondary text-uppercase font-italic common-title">Sell to the best libraries in the world</h1>
         </div>
       </div>
       <!-- 2nd bootstrap row -->
@@ -471,7 +473,7 @@
       </div>
       <div class="row">
         <div class="col text-light text-center">
-          <p>&copy; Copyright 2020. Made by OpenClassic</p>
+          <p>&copy; Copyright 2020. Made by <span class="publisher">OpenClassic</span></p>
         </div>
       </div>
     </div>
@@ -484,5 +486,5 @@
     with the 'cannot find jquery' message.
   -->
   <script src="assets/scripts/vendor/lightbox.min.js"></script>
-<script type="text/javascript" src="main.24289ee1c2f9b82b5f21.js"></script></body>
+<script type="text/javascript" src="main.f14cacc4555b73109ad0.js"></script></body>
 </html>
