@@ -14,6 +14,16 @@ if (module.hot) {
 
 $(document).ready(function() {
   
+  // for better demo experience
+  $('a').on("click", function(event) {
+    event.preventDefault();
+  });
+
+
+  $('.nav__hamburger').click(function() {
+    $('.nav').toggleClass('change');
+  });
+
   // make lightbox appear faster, and connect the last one and the first one.
   lightbox.option({
     'resizeDuration': 200,
@@ -31,8 +41,7 @@ $(document).ready(function() {
 
   // change books beside the accordion
   $('.writers-accordion').click(function(event) {
-        
-    if(event.target.id.split('-')[0] === 'button') {
+     if(event.target.id.split('-')[0] === 'button') {
        $('#book-1').attr('src', 'assets/images/writers/' + event.target.id.split('-')[1] + '-book1.jpg');
        $('#book-2').attr('src', 'assets/images/writers/' + event.target.id.split('-')[1] + '-book2.jpg');
     }

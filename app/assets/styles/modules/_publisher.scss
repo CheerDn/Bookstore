@@ -1,0 +1,8 @@
+.publisher {
+  color: #f0f0f0;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  &--with-icon {
+    transform: translateY(-80%);
+  }
+}

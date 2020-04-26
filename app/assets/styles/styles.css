@@ -1,6 +1,7 @@
 @import "../../../node_modules/lightbox2/dist/css/lightbox.min.css";
 
 @import "./base/global";
+@import "./modules/publisher";
 @import "./modules/common-title";
 @import "./modules/header";
 @import "./modules/gallery";
@@ -8,6 +9,8 @@
 @import "./modules/suggested-books";
 @import "./modules/popular-books";
 @import "./modules/contact";
+@import "./modules/nav";
+
 
 
 
