@@ -15,7 +15,7 @@ if (module.hot) {
 $(document).ready(function() {
   
   // for better demo experience
-  $('a[href～="#gallery"]').on("click", function(event) {
+  $('a[href="#"]').on("click", function(event) {
     event.preventDefault();
   });
 
