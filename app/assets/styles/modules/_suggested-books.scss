@@ -1,11 +1,11 @@
 .sg-books {
-  height: 100vh;
+  height: 110vh;
   background: url("assets/images/wood-bg.jpeg") no-repeat center /cover;
 
   &__books {
     position: relative;
     height: 50vh;
-    transform: translateY(-15%);
+    transform: translateY(-5%);
   
     &__book {
       width: 35%;
