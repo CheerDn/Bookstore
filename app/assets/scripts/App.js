@@ -15,10 +15,9 @@ if (module.hot) {
 $(document).ready(function() {
   
   // for better demo experience
-  $('a').on("click", function(event) {
+  $('a[href～="#gallery"]').on("click", function(event) {
     event.preventDefault();
   });
-
 
   $('.nav__hamburger').click(function() {
     $('.nav').toggleClass('change');
